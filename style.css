@@ -1,0 +1,252 @@
+@font-face {
+    font-family: javan;
+    src: url(./assets/font/javan.ttf);
+}
+@font-face {
+    font-family: dibaj;
+    src: url(./assets/font/Dibaj/dibaj-Family/Dibaj-otf/Dibaj\ Medium.otf);
+}
+@font-face {
+    font-family: aria;
+    src: url(./assets/font/آریا/Aria-Medium.ttf);
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    direction: rtl;
+    font-family: aria;
+}
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d3250;
+    color: #ffffff;
+}
+.main-panel
+{
+    width: 80%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 1px #141a3e;
+    height: 26rem;
+}
+.panel-r
+{
+    width: 50%;
+    display: flex;
+}
+.information
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #424769;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.panel-l
+{
+    width: 50%;
+    background-image: url('./assets/img/zongnan-bao-B0_anM2-wNM-unsplash.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: hidden;
+    padding: 1rem;
+}
+h2
+{
+    margin: 0;
+}
+.inputs
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.inputs > div
+{
+    gap: 0.5rem;
+}
+.inputs > div:nth-of-type(1)
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.national-code
+{
+    width: 50%;
+    outline: none;
+    border: none;
+    height: 1.5rem;
+}
+.inputs > div:nth-of-type(2)
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inputs > div:nth-of-type(2) > div
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#apply
+{
+    width: 35%;
+    font-family: aria;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d3250;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: #f9b17a;
+    transition: all 0.3s;
+}
+#apply:hover
+{
+    box-shadow: 0px 0px 18px -3px #f9b17a;
+    color: #fff;
+}
+.information > div:nth-of-type(1)
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#amount
+{
+    height: 1.5rem;
+    direction: ltr;
+    width: 50%;
+    text-align: end;
+}
+.results
+{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.results::-webkit-scrollbar
+{
+    background-color: transparent;
+    width: 1px;
+}
+.results::-webkit-scrollbar-thumb
+{
+    background-color: rgba(255, 166, 0, 0.658);
+    border-radius: 20px;
+}
+input
+{
+    font-family: aria;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.3rem 1.5rem;
+    outline: none;
+    border: none;
+}
+input:focus
+{
+    border: 2px solid #f9b17a;
+}
+.result
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0.5rem 0;
+}
+
+@media (max-width:768px)
+{
+.main-panel
+{
+    flex-direction: column;
+    height: fit-content;
+    margin: 1rem 0;
+}
+.information
+{
+    gap: 2rem;
+}
+.panel-r
+{
+    width: 100%;
+}
+.panel-l
+{
+    padding: 1rem 0;
+    width: 100%;
+    background-image: none;
+    padding: 0;
+}
+.results
+{
+    padding: 0.5rem 0.2rem;
+    background-color: none;
+    padding: 0;
+}
+.result
+{
+    gap: 0rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+}
+
+@media(min-width:1440px)
+{
+.results
+{
+    gap: 2rem;
+}
+.result
+{
+    font-size: 2rem;
+}
+h2
+{
+    font-size: 3rem;
+}
+.information > div:nth-of-type(1) > span
+{
+    font-size: 1.5rem;
+}
+.inputs > div > span
+{
+    font-size: 2rem;
+}
+#apply
+{
+    font-size: 2.5rem;
+}
+#amount
+{
+    text-align: end;
+}
+input
+{
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+}
+.main-panel
+{
+    height: 45rem;
+}
+}
